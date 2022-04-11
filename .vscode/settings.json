@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "samples/assignment-template/java-code/one-dimensional-arrays/src",
+        "src/student-solutions/busiles-solutions/java-code/one-dimensional-arrays/src"
+    ]
+}
