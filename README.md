@@ -3,5 +3,5 @@ Exploring Arrays 1D Arrays is a educational technology repository that is aimed 
 
 ## 📝 License
 
-Copyright © 2021 [Avneesh Agarwal](https://github.com/njabuloskosana). <br />
-#This project is [MIT](https://github.com/avneesh0612/next-progress-bar/blob/main/LICENSE) licensed.
+Copyright © 2022 [Njabulo Skosana](https://github.com/njabuloskosana). <br />
+#This project is [MIT](https://github.com/njabuloskosana/Exploring-1D-Arrays-EduTech/blob/main/LICENSE) licensed.
