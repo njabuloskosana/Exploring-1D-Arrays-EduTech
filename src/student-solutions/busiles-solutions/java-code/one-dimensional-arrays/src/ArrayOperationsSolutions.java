@@ -8,8 +8,13 @@ public class ArrayOperationsSolutions {
      * @return
      */
     public int sum(int[]arr)
-    {
-        return 0;
+    { 
+        int sum = 0; 
+        int i;
+
+        for (i = 0; i < arr.length; i++)
+            sum += arr[i];
+        return sum;
 
     }
 
@@ -23,6 +28,10 @@ public class ArrayOperationsSolutions {
      */
     public double average(int[]arr)
     {
+       // if double arr==null;
+
+       // for 
+
         return 0;
     }
 

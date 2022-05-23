@@ -1,3 +1,7 @@
+from array import array
+from ast import For
+
+
 class ArrayOperations:
     #The method sum will calculate the sum of all values 
     # in the array and return the sum, if the array is empty return zero
@@ -5,7 +9,11 @@ class ArrayOperations:
         
     def sum(self,arr):
         # add code
-        return 0
+        sum=0
+        for i in arr:
+            sum = sum + i
+        return sum
+        
 
     # The method average will calculate the average of all the values 
     # within the array an return the average if the array is empty
@@ -13,17 +21,29 @@ class ArrayOperations:
     # arr=[1,2,3,4] returns 2,5
 
     def average(self,arr):
-        # add code
-        return 0
+        if arr==None:
+            return 0 
+
+        else:
+            average = sum(arr) /len(arr)
+
+        return average
 
     # The method contains returns true if value is found in the 
     # array and false if the value is not in the array
     # if the array is empty it returns zero
     # arr=[6,9,0,4] value=0 retur true
 
-    def contains(arr,value):
-        #add code
-        return 0
+    def contains(self,arr,value):
+        if arr==None:
+            return 0
+
+        else:
+            for x in arr:
+                
+                if x == value:
+                  return True
+
 
     # This method removes value from the array and returns back 
     # a new array without the value, if the value is not present
