@@ -1,5 +1,6 @@
 from array import array
 from ast import For
+from operator import contains
 
 
 class ArrayOperations:
@@ -51,25 +52,41 @@ class ArrayOperations:
     # null
     # arr=[6,7,8,4,9,0] and value=8 return [6,7,4,9,0] 
     
-    def remove(arr,value):
-        #add code
-        return 0
+    def remove(self,arr,value):
+        if arr==None:
+            return 0
+        else:
+            if contains(arr,value)==True:
+                arr.remove(value)
+                return arr
+            else:
+                return arr
 
     # This method finds the highest value in the array and returns
     # the value, if the array is empty return zero
     # arr=[9,7,4,3] return 9
         
-    def maximum(arr):
-        #add code
-        return 0
+    def maximum(self,arr):
+        if arr==None:
+            return 0
+        else:
+            maximum=max(arr)
+            return maximum
+
+
+
+
 
     #This method finds the lowest value in the array and returns
     # the value, if the array is empty return zero 
     # arr=[5,4,1,9] return 1
 
-    def minimum(arr):
-        #add code
-        return 0
+    def minimum(self,arr):
+        if arr==None:
+            return 0
+        else:
+            minimum=min(arr)
+            return minimum
 
     # This method find the second lowest value in the array
     # and returns the value, if the array is empty return 
