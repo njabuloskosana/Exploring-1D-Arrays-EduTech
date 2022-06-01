@@ -1,5 +1,7 @@
 from array import array
 from ast import For
+from distutils.command.build_scripts import first_line_re
+import heapq
 from operator import contains
 
 
@@ -92,46 +94,92 @@ class ArrayOperations:
     # and returns the value, if the array is empty return 
     # zero arr=[1,4,3,2] returns 2
 
-    def secondSmallest(arr):
-        return 0
+    def secondSmallest(self,arr):
+        if arr==None:
+            return 0
+
+    def second_smallest(numbers):
+            return heapq.nsmallest(2, numbers)[-1]
+
+
 
     # This method returns the reversed version of the array
     # [1,2,3,4] becomes [4,3,2,1], if the array is empty
     # return null
         
-    def reverse(arr):
-        #add code
-        return 0
+    def reverse(self,arr):
+        if arr==None:
+           return 0
+        else:
+            arr.reverse() 
+            return arr 
+    
 
     # This method recieves an array with duplicate values and 
     # returns a new array without duplicates [1,2,2,3,4,4] 
     # becomes [1,2,3,4], if the array is empty return null
-    def removeDuplicates(arr):
-            #add code
+    def removeDuplicates(self,arr):
+        if arr==None:    
             return 0
+        else:
+            arr = list(dict.fromkeys(arr))
+            return arr
+    
+    # returns true
+    # returns false
+    # equal
+    # not equal
+    
+    # 2 arrays
+    
 
     # This method returns true if array1 and array2 are equal
     # if they are not equal it returns false
     # arr1=[1,2,3,4] and arr2=[1,2,3,4] return true
     # arr1=[1,2,3,4] and arr2=[5,6,7,8] return false
         
-    def isEqual(arr1,arr2):
-            #add code
-            return 0
+    def isEqual(self,arr1,arr2):
+        if (arr1 != arr2):
+         return False
+
+        else:
+           arr1==arr2
+        return True
+        
+
 
     # This method returns the number of odd values inside the array
     # arr=[1,2,3,2] returns 2, if the array is empty return 0
         
-    def numberOfOddNumbers(arr):
-            #add code
+    def numberOfOddNumbers(self,arr):
+        if arr==None:
             return 0
+        count=0
+        # iterating each number in list
+        for num in arr: 
+      
+        # checking condition
+         if num % 2 != 0:
+            count = count+1
+        return count
+
+
 
     # This method returns the number of even values inside the array
     # arr=[1,2,3,2] returns 2, if the array is empty return 0
         
-    def numberOfEvenNumbers(arr):
-            #add code
+    def numberOfEvenNumbers(self,arr):
+        if arr==None:
             return 0
+        count=0
+        # iterating each number in list
+        for num in arr: 
+      
+        # checking condition
+         if num % 2==0:
+            count = count+1
+        return count
+        
 
     # This method returns the number of positive numbers in the array
     # if the array is empty return zero
