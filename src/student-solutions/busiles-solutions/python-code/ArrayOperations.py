@@ -185,28 +185,61 @@ class ArrayOperations:
     # if the array is empty return zero
     # arr=[1,2,-8,4] return 3
         
-    def numberOfPositiveNumbers(arr):
-            #add code
+    def numberOfPositiveNumbers(self,arr):
+        if arr==None:
             return 0
+        count=0
+        # iterating each number in list
+        for num in arr: 
+      
+        # checking condition
+         if num >= 0:
+            count += 1
+        return count
+            
 
     # This method returns the number of negative numbers in the array
     # if the array is empty return zero
     # arr=[1,2,-8,4] return 1
-    def numberOfNegativeNumbers(arr):
-            #add code
+    def numberOfNegativeNumbers(self,arr):
+        if arr==None:
             return 0
+        count=0
+        # iterating each number in list
+        for num in arr: 
+      
+        # checking condition
+         if num < 0:
+            count += 1
+        return count
+            
 
     # This method returns the most occuring value in the array
     # if the array is empty return zero
     # arr=[1,3,4,6,1,7,1,9] return 1
-    def mostOccuring(arr):
-            #add code
+    def mostOccuring(self,arr):
+        if arr==None:
             return 0
+        count=0
+        num=arr[0]
+        # iterating each number in list
+        for i in arr:
+
+        # checking condition    
+            curr_frequency = arr.count(i)
+            if(curr_frequency> count):
+             count = curr_frequency
+             num = i
+        return num
 
     # This method will sort the array by placing all 0's on the left of 
     # the array and 1's on the right side of the array and return the 
     # newly arranged array, arr=[1,0,1,0,1,0] returns [0,0,0,1,1,1]
         
-    def sort(arr):
-            #add code
+    def sort(self,arr):
+        if arr==None:
             return 0
+
+        else:
+            arr.sort()
+        return arr
